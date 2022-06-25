@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
+<suite thread-count="5" verbose="1" name="sample">
+<listeners>  
+<listener class-name="com.inetbanking.testcases.testListners"/>  
+</listeners>  
+
+<test name="Login">
+ 
     <classes>
       <class name="com.inetbanking.testcases.TC_Login_001"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+</test>
+
+<test name="Datadriven">
+
+    <classes>
+      <class name="com.inetbanking.testcases.TC_loginDatadriven_002"/>
+    </classes>
+</test> <!-- Test -->
+
+
+<test name="sample_verify">
+
+    <classes>
+      <class name="com.inetbanking.testcases.TC_Sample_Verify"/>
+    </classes>
+</test> <!-- Test -->
+</suite>
+

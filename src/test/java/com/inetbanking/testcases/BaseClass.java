@@ -40,7 +40,7 @@ public void setup() {
 @AfterClass
 public void teardown() throws InterruptedException {
 	Thread.sleep(3000);
-	driver.close();
+	//driver.close();
 	driver.quit();
 }
 public void capturescreen(WebDriver driver, String testname) throws IOException {

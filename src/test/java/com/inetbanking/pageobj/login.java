@@ -11,6 +11,7 @@ public class login {
 	//create a constructor, this will call first or this will invoke first
 	public login(WebDriver driver2){
 		 driver= driver2;
+		 //this.driver=driver
 		PageFactory.initElements(driver2, this);
 	}
 	@FindBy(name="uid")

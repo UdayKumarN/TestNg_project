@@ -1,8 +1,12 @@
 package com.inetbanking.testcases;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -10,6 +14,8 @@ import com.inetbanking.pageobj.login;
 import com.inetbanking.utilities.XLUtils;
 
 public class TC_loginDatadriven_002 extends BaseClass{
+	
+	
 
 	@Test(dataProvider = "logindata" )
 	public void logindatadriven(String user,String pass) throws InterruptedException {
@@ -23,15 +29,19 @@ public class TC_loginDatadriven_002 extends BaseClass{
 			Thread.sleep(3000);
 			driver.switchTo().defaultContent();
 			Assert.assertTrue(false);
+			driver.quit();
 		}
 		else
 		{
 			Assert.assertTrue(true);
+			System.out.println("You have succesfully logged in");
 			lp.logout();
+			System.out.println("You have succesfully logged out");
 			Thread.sleep(3000);
 			driver.switchTo().alert().accept();
 			Thread.sleep(3000);
-			driver.switchTo().defaultContent(); 
+			driver.switchTo().defaultContent();
+			driver.quit();
 		}
 	}
 	
