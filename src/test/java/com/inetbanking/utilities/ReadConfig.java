@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-import com.inetbanking.testcases.BaseClass;
+import com.inetbanking.testcases.Test_BaseClass;
 
 public class ReadConfig {
 	Properties pro;	//creating object to properties class i.e config.properties class

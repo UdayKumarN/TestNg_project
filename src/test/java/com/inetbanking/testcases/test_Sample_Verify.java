@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
-public class TC_Sample_Verify {
+public class test_Sample_Verify {
 
 	WebDriver driver;
 	

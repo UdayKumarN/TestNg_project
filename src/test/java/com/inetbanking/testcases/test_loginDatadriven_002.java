@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 import com.inetbanking.pageobj.login;
 import com.inetbanking.utilities.XLUtils;
 
-public class TC_loginDatadriven_002 extends BaseClass{
+public class test_loginDatadriven_002 extends Test_BaseClass{
 	
 	
 

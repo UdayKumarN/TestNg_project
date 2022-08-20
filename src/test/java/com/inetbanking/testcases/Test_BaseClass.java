@@ -21,7 +21,7 @@ import com.inetbanking.utilities.ReadConfig;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BaseClass {
+public class Test_BaseClass {
 ReadConfig readconfig=new ReadConfig();	//object created for readconfig.java class to invoke the ReadConfig() constructor
 public String baseUrl=readconfig.getApplicationUrl(); //calling the readconfig for url
 public String username=readconfig.getusername();

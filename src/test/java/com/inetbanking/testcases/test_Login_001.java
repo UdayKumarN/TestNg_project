@@ -2,13 +2,13 @@ package com.inetbanking.testcases;
 
 import org.testng.annotations.Test;
 
+import com.inetbanking.pageobj.login;
+
 import java.io.IOException;
 
 import org.testng.Assert;
 
-import com.inetbanking.pageobj.login;
-
-public class TC_Login_001 extends BaseClass {
+public class test_Login_001 extends Test_BaseClass {
 	@Test
 	public void loginTest() throws InterruptedException, IOException
 	{

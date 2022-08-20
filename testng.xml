@@ -3,20 +3,20 @@
 <suite thread-count="5" verbose="1" name="sample">
 
 <listeners>  
-<listener class-name="com.inetbanking.testcases.testListners"/>  
+<listener class-name="com.inetbanking.testcases.test_Listners"/>  
 </listeners>  
 
 <test name="Login">
  
     <classes>
-      <class name="com.inetbanking.testcases.TC_Login_001"/>
+      <class name="com.inetbanking.testcases.test_Login_001"/>
     </classes>
 </test>
 
 <test name="Datadriven">
 
     <classes>
-      <class name="com.inetbanking.testcases.TC_loginDatadriven_002"/>
+      <class name="com.inetbanking.testcases.test_loginDatadriven_002"/>
     </classes>
 </test> <!-- Test -->
 
@@ -24,7 +24,7 @@
 <test name="sample_verify">
 
     <classes>
-      <class name="com.inetbanking.testcases.TC_Sample_Verify"/>
+      <class name="com.inetbanking.testcases.test_Sample_Verify"/>
     </classes>
 </test> <!-- Test -->
 </suite>
