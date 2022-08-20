@@ -13,6 +13,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class TC_Sample_Verify {
 
@@ -20,7 +22,8 @@ public class TC_Sample_Verify {
 	
 	@BeforeMethod
 	public void setUp() {
-		System.setProperty("webdriver.chrome.driver" ,"./Drivers\\chromedriver.exe" );
+		//System.setProperty("webdriver.chrome.driver" ,"./Drivers\\chromedriver.exe" );
+		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -42,7 +45,7 @@ public class TC_Sample_Verify {
 		TakesScreenshot ts=(TakesScreenshot) driver;
 		File sc = ts.getScreenshotAs(OutputType.FILE);
 		File target = new File(System.getProperty("user.dir")+"/Screenshots/");
-		System.out.print("Screenshot is captured");
+		System.out.print("Screenshot is captured succefully");
 		System.out.println(sc);
 		Assert.assertTrue(logo);
 	}	

@@ -16,8 +16,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-import com.aventstack.extentreports.utils.FileUtil;
+//import com.aventstack.extentreports.utils.FileUtil;
 import com.inetbanking.utilities.ReadConfig;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 ReadConfig readconfig=new ReadConfig();	//object created for readconfig.java class to invoke the ReadConfig() constructor
@@ -28,7 +30,8 @@ public static WebDriver driver;
 public static Logger logger;
 @BeforeClass
 public void setup() {
-	System.setProperty("webdriver.chrome.driver" ,"./Drivers\\chromedriver.exe" );
+	//System.setProperty("webdriver.chrome.driver" ,"./Drivers\\chromedriver.exe" );
+	WebDriverManager.chromedriver().setup();
 	driver=new ChromeDriver();
 	driver.manage().window().maximize();
 	
