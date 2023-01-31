@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [sample by packages]">
+  <test thread-count="5" name="com.inetbanking.testcases(failed)">
+    <classes>
+      <class name="com.inetbanking.testcases.logintest">
+        <methods>
+          <include name="dropdown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="tootip"/>
+        </methods>
+      </class> <!-- com.inetbanking.testcases.logintest -->
+      <class name="com.inetbanking.testcases.test_loginDatadriven_002">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="logindatadriven" invocation-numbers="1 2 3 4"/>
+        </methods>
+      </class> <!-- com.inetbanking.testcases.test_loginDatadriven_002 -->
+    </classes>
+  </test> <!-- com.inetbanking.testcases(failed) -->
+</suite> <!-- Failed suite [sample by packages] -->

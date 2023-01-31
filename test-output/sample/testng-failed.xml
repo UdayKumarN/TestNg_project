@@ -8,22 +8,14 @@
     <classes>
       <class name="com.inetbanking.testcases.test_loginDatadriven_002">
         <methods>
-          <include name="logindatadriven" invocation-numbers="1 2 3 4"/>
           <include name="setup"/>
           <include name="teardown"/>
+          <include name="startTest"/>
+          <include name="getResult"/>
+          <include name="logindatadriven" invocation-numbers="1 2 3 4"/>
+          <include name="close"/>
         </methods>
       </class> <!-- com.inetbanking.testcases.test_loginDatadriven_002 -->
     </classes>
   </test> <!-- Datadriven(failed) -->
-  <test thread-count="5" name="sample_verify(failed)">
-    <classes>
-      <class name="com.inetbanking.testcases.test_Sample_Verify">
-        <methods>
-          <include name="tearDown"/>
-          <include name="testLogo"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.inetbanking.testcases.test_Sample_Verify -->
-    </classes>
-  </test> <!-- sample_verify(failed) -->
 </suite> <!-- Failed suite [sample] -->

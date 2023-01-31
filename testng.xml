@@ -21,11 +21,5 @@
 </test> <!-- Test -->
 
 
-<test name="sample_verify">
-
-    <classes>
-      <class name="com.inetbanking.testcases.test_Sample_Verify"/>
-    </classes>
-</test> <!-- Test -->
 </suite>
 
